@@ -1,0 +1,14 @@
+print("Welcome to Jayden Smith pizza parlour")
+d = int(input("Enter the diameter of the pizza: "))
+HST = 0.13
+
+RENT = 1
+LABOUR = 0.75
+materials = 0.5
+
+subtotal = RENT + LABOUR + (d * materials)
+tax = subtotal * HST
+total = subtotal * (1 + HST)
+total = round(total, 2)
+
+print(f"The diameter of the pizza is {d} inches and the total cost is ${total:.2f}")
